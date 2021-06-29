@@ -1,1 +1,2 @@
 # work-calender.github.io
+i will not lie a lot of this was from a youtube video that i found because i was gone for almost all of the API stuff on a buniess trip. thats why it took 4 hours only cause i had to adjust for the classes and ID elements in the CSS and HTML but honestly i am struggling with grasping third party APIs or APIs in general, i dont deserve an A cause i didnt really do alot of this by understanding it was by reference. i cant figure out how to make my boxes go across the full page either yet. hopefuuly i will get that before its due.

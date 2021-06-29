@@ -1,4 +1,4 @@
-function createtimeblock(time, info, save) {
+function createtimeblock(time, text, index) {
     const timeblockEL =$(`
         <div class="row time-block">
             <div class="hour">${time.display}</div>
@@ -6,7 +6,7 @@ function createtimeblock(time, info, save) {
     `);
 
         const timeblockInput = $(`
-        <textarea name="time-block" class="description">${info}</textarea>
+        <textarea name="time-block" class="description">${text}</textarea>
     `);
 
     const currentHour= moment().hour();
@@ -16,14 +16,14 @@ function createtimeblock(time, info, save) {
 
         else timeblockInput.addClass("future");
 
-    const timeblockSaveBtn = (`
+    const timeblockSaveBtn = $(`
         <button class="saveBtn">
             <i class="fas fa-Save"></i>
         </button>
     `);
 
     timeblockSaveBtn.click(function () {
-        timeblocks[save] = timeblockInput.val();
+        timeblocks[index] = timeblockInput.val();
         localStorage.setItem("timeblocks", JSON.stringify(timeblocks));
     });
 

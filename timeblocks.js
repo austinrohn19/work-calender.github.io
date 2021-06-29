@@ -16,7 +16,7 @@ function createTimeblock(time, text, index) {
     
         else timeblockInput.addClass("future");
 
-    const timeblockSaveBtn = (`
+    const timeblockSaveBtn = $(`
         <button class="saveBtn">
             <i class="fas fa-save"></i>
         </button>

@@ -9,3 +9,15 @@ const hours= [
     {display:"4pm", value:15},
     {display:"5pm", value:16}
 ];
+
+let timeblocks = JSON.parse(localStorage.getItem("timeblocks"));
+
+    if (timeblocks === null) {
+        timeblocks = [];
+    for (let i = 0; i < hours.length; i++) {
+        timeblocks.push("");}    
+}
+
+for (let i=0; i< hours.length; i++) {
+    $("#timeblocks").append(createtimeblock(hour[i], timeblocks[i], i));
+}

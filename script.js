@@ -18,6 +18,6 @@ let timeblocks = JSON.parse(localStorage.getItem("timeblocks"));
         timeblocks.push("");}    
 }
 
-for (let i=0; i< hours.length; i++) {
+for (let i = 0; i < hours.length; i++) {
     $("#timeblocks").append(createtimeblock(hour[i], timeblocks[i], i));
 }

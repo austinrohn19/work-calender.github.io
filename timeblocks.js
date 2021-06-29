@@ -16,4 +16,15 @@ const currentHour= moment().hour();
 
    else timeblockInput.addClass("future"):
 
+   const timeblockSaveBtn = (`
+    <button class="saveBtn">
+        <i class="fas fa-Save"></i>
+    </button>
+`);
+
+timeblockSaveBtn.click(function () {
+    timeblocks[save] = timeblockInput.val();
+    localStorage.setItem("timeblocks", JSON.stringify(timeblocks));
+});
+
 }

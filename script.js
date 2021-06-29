@@ -1,4 +1,4 @@
-const hours= [
+const hours = [
     {display:"9am", value:8},
     {display:"10am", value:9},
     {display:"11am", value:10},

@@ -14,7 +14,7 @@ function createtimeblock(time, info, save) {
 
         else if (time.value === currenthour) timeblockInput.addClass("present");
 
-        else timeblockInput.addClass("future"):
+        else timeblockInput.addClass("future");
 
     const timeblockSaveBtn = (`
         <button class="saveBtn">
